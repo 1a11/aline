@@ -1,0 +1,6 @@
+necessary libraries:
+SpeechRecognition
+pyttsx3
+pyaudio
+gTTS
+pypiwin32
