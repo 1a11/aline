@@ -13,7 +13,7 @@ We tried to create a multifunctional tool to simplify the work with complex equi
 <p>Aline is written in Python and uses many third-party libraries to implement computer vision and neural networks. To run the code from the repository you need to have the following list of installed modules:</p>
 <ul>
 <li>[OpenCV 2] - Computer vision library</li>
-<li>[Tensorflow] - awesome web-based text editor</li>
+<li>[Tensorflow] - Neural network library made by google</li>
 <li>[numpy] - NumPy is the fundamental package for scientific computing with Python.</li>
 <li>[scipy] - SciPy is a Python-based software for mathematics, science, and engineering</li>
 </ul>
