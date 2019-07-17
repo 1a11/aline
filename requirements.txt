@@ -1,0 +1,5 @@
+Pillow
+opencv-python
+numpy
+scipy
+tensorflow-gpu
