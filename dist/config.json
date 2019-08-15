@@ -1,0 +1,24 @@
+{
+    "header": {
+        "versions": {
+            "self": "0.1EB"
+        },
+        "libs": [
+            "SpeechRecognition",
+            "pyttsx3",
+            "pyaudio",
+            "gTTS",
+            "pypiwin32",
+            "Pillow",
+            "opencv-python",
+            "numpy",
+            "scipy",
+            "tensorflow-gpu"
+        ]
+    },
+    "body": {
+        "akey": "a5d5d0d5-e582-4a99-8659-1677a8b7b237",
+        "activation_url": "https://protected-temple-64796.herokuapp.com/activate/",
+        "act": false
+    }
+}
