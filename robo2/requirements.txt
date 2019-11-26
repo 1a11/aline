@@ -1,0 +1,10 @@
+SpeechRecognition
+pyttsx3
+pyaudio
+gTTS
+pypiwin32
+Pillow
+opencv-python
+numpy
+scipy
+tensorflow-gpu
