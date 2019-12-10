@@ -1,1 +1,0 @@
-point0xAA=ax.scatter([0], [0], [0], zdir='z', s=20,c='b');point0xAB=ax.scatter([0], [0], [100], zdir='z', s=20,c='r');point0xAC=ax.scatter([5], [0], [150], zdir='z', s=20,c='r');point0xAD=ax.scatter([10], [0], [200], zdir='z', s=20,c='r');plt.pause(0.05);point0xAA.remove();point0xAB.remove();point0xAC.remove();point0xAD.remove();
