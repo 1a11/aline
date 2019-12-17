@@ -7,7 +7,7 @@ import math
 
 groups = []
 
-def group(val,x,y):
+def group(val):
     i=0
     global groups
     x1,y1 = val
@@ -19,11 +19,8 @@ def group(val,x,y):
                 groups.append([(xp,yp),(x1,y1)])
         i+=1
 def start(x,y,xy):
-    temp_x = x
-    temp_y = y
-    temp_xy = xy
     for i in xy:
-        group(i, temp_x, temp_y)
+        group(i)
     average = []
     for i in xy:
         temp = []
@@ -34,30 +31,26 @@ def start(x,y,xy):
                     temp.append(i2[1])
                 
         if len(temp) > 2:
-            #print('Pairs for X:{} Y:{}'.format(i[0], i[1]))
-##            for i2 in temp: 
-##                print(i2)
+            print('Pairs for X:{} Y:{}'.format(i[0], i[1]))
+            for i2 in temp: 
+                print(i2)
             tx = 0
             ty = 0
             for i2 in temp:
                 tx+=i2[0]
                 ty+=i2[1]
-            #print('Average X:{} Y:{}'.format(tx/len(temp), ty/len(temp)))
+            print('Average X:{} Y:{}'.format(tx/len(temp), ty/len(temp)))
             average.append((tx/len(temp), ty/len(temp)))
     temp = []
     for i in average:
         for i2 in average:
-            if math.fabs((i[0]-i2[0])) <300 and math.fabs((i[1]-i2[1])) <300:
+            if math.fabs((i[0]-i2[0])) >600 and math.fabs((i[1]-i2[1])) >600:
                 if i not in temp:
                     temp.append(i)
-                    #print(i)
-##    print()
-##    for i in temp:
-##        print(int(i[0]),',')
-##    print()
-##    for i in temp:
-##        print(int(i[1]),',')
-    #print(temp)
-    return(temp)
-def run(strg):
-    eval(strg)
+                    print(i)
+    print()
+    for i in temp:
+        print(int(i[0]),',')
+    print()
+    for i in temp:
+        print(int(i[1]),',')

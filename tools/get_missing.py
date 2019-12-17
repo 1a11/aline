@@ -1,6 +1,6 @@
 def run():
-    import blobs
-    import aruco_beta
+    #import blobs
+    #import aruco_beta
     import numpy as np
     import cv2
     from cv2 import aruco
@@ -8,11 +8,11 @@ def run():
 
     from ar_markers import detect_markers
     control = []
-    for i in range(100):
+    for i in range(475):
         control.append(i)
-    frame = cv2.imread("markers_test.png")
+    frame = cv2.imread("sampleEDT.png")
 
-    im = cv2.imread("markers_test - blank.png")
+    im = cv2.imread("sampleNET.png")
     i=0
     markers, c_markers = detect_markers(frame), detect_markers(im)
     marks = []
